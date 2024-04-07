@@ -283,8 +283,8 @@ header {
 .notFound{
     grid-template-columns: 1fr!important;
     color: var(--orange);
-    font-size: 1.8rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 400;
     width: 100%;
 }
 

@@ -29,7 +29,8 @@
     function displayMeals(meals) {
         const mealContainer = document.getElementById('meal');
         if (!meals) {
-            mealContainer.innerHTML = "<p>Sorry, we didn't find any meal!</p>";
+            mealContainer.innerHTML = "<p>Sorry, we didn't find any meal! Please try other ingredients</p>";
+            mealContainer.classList.add('notFound');
             return;
         }
         const mealItems = meals.map(meal => `
@@ -44,6 +45,7 @@
             </div>
         `).join('');
         mealContainer.innerHTML = mealItems;
+        mealContainer.classList.remove('notFound');
     }
 
 // Lookup full meal details by id

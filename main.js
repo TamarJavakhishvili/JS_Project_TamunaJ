@@ -1,4 +1,3 @@
-    document.addEventListener('DOMContentLoaded', () => {
     const searchBtn = document.getElementById('search-btn');
     const mealList = document.getElementById('meal');
     const mealDetailsContent = document.querySelector('.meal-details-content');
@@ -85,7 +84,7 @@
     function closeRecipe() {
         mealDetailsContent.parentElement.classList.remove('showRecipe');
     }
-});
+
 
 
 
@@ -101,3 +100,5 @@
 // The closest() method starts at the element itself, then the anchestors (parent, grandparent, ...) until a match is found.
 
 // The closest() method returns null() if no match is found.
+
+//event.preventDefault() - It prevents the default action of the click event (here, following the link) and retrieves the ID of the clicked meal item. 
